@@ -1,9 +1,9 @@
 import React from "react";
 import "./Post.css";
 
-const Post = ({ post: { title, body, imgUrl1, imgUrl2, imgUrl3, imgUrl4, date }, index }) => {
+const Post = ({ post: { title, body, imgUrl1, imgUrl2, imgUrl3, imgUrl4, date, id }, index }) => {
     return (  
-        <div className="post-container">
+        <div id={id} className="post-container">
             <h1 className="heading">{title}</h1>
             <h4>{date}</h4>
             <img className="header-img" src={imgUrl1} alt="post" />

@@ -39,6 +39,7 @@ h4 {
     background-color: #c1e9e4;
     border-radius: 3%;
     box-shadow: 17px 17px #679a9c;
+    /* max-width: 800px; */
 }
 
 .post-body {
