@@ -1,23 +1,27 @@
 import './App.css';
 import Posts from "./components/Posts.jsx";
 import PostIndex from "./components/PostIndex.jsx";
-import Navbar from "./components/Navbar.jsx";
+import PostDetails from "./components/PostDetails.jsx";
+
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
+  Link,
+  useParams
 } from 'react-router-dom'; 
 
+
 function App() {
+
   return (
     <div className="App">
       <div className="banner">
-        <img className="banner-img" src="assets/images/Icons/GameIcon.jpeg"/>
+        <img className="banner-img" src="/assets/images/Icons/GameIcon.jpeg"/>
         <h1 className="App-header">Olive's Game Blog</h1>
-        <img className="banner-img" src="assets/images/Icons/GameIcon.jpeg"/>
+        <img className="banner-img" src="/assets/images/Icons/GameIcon.jpeg"/>
       </div>
-
+    
       <Router>
         <div className="nav">
           <ul className="nav-container">
@@ -31,6 +35,7 @@ function App() {
         </div>
         <Routes>
           <Route exact path='/' element={< Posts />}></Route>
+          <Route exact path='/post-details/:postid' element={< PostDetails />}></Route>
           <Route exact path='/posts-index' element={< PostIndex />}></Route>
         </Routes>
       </Router>

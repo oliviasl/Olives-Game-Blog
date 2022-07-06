@@ -8,6 +8,7 @@ const Posts = () => {
 
     return (
         <div className="posts-container">
+            <h1 className="section-header">Latest Posts</h1>
             {blogPosts.map( (post, index) => (
                 <Post key={index} post={post} index={index}/>
             ))}

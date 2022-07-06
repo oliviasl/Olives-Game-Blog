@@ -1,3 +1,15 @@
+body {
+    scroll-behavior: smooth;
+}
+
+a {
+    background-color: white;
+    border-radius: 5%;
+    width: 30vh;
+    height: 30vh;
+    margin: 2vh;
+}
+
 .index-container {
     display: flex;
     flex-direction: row;
@@ -17,10 +29,6 @@
     opacity: .80;
 }
 
-a {
-    background-color: white;
-    border-radius: 5%;
-    width: 30vh;
-    height: 30vh;
-    margin: 2vh;
+.section-header {
+    color: white;
 }

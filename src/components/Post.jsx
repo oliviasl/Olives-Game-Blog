@@ -1,7 +1,9 @@
 import React from "react";
 import "./Post.css";
 
+
 const Post = ({ post: { title, body, imgUrl1, imgUrl2, imgUrl3, imgUrl4, date, id }, index }) => {
+
     return (  
         <div id={id} className="post-container">
             <h1 className="heading">{title}</h1>
