@@ -2,8 +2,9 @@ import React from "react";
 import "./PostIndex.css";
 import postsData from "../posts.json";
 
-const PostIndex = () => {
+const PostIndex = ({allImages}) => {
     const blogPosts = postsData.data;
+    const postImages = allImages;
 
     return (
         <div>
@@ -13,7 +14,7 @@ const PostIndex = () => {
 
                 {blogPosts.map( (post, index) => (
                     <a key={index} href={"/post-details/" + post.id} >
-                        <img className="index-img" src={post.indexImg} />
+                        <img className="index-img" src={postImages[post.id + post.indexImg]} alt="post index"/>
                     </a>
                 ))}
             </div>
