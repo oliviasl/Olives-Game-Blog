@@ -13,7 +13,7 @@ const PostIndex = ({allImages}) => {
             <div className="index-container">
 
                 {blogPosts.map( (post, index) => (
-                    <a key={index} href={"/post-details/" + post.id} >
+                    <a key={index} href={"/Olives-Game-Blog/post-details/" + post.id} >
                         <img className="index-img" src={postImages[post.id + post.indexImg]} alt="post index"/>
                     </a>
                 ))}

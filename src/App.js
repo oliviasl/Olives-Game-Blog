@@ -33,17 +33,17 @@ function App() {
         <div className="nav">
           <ul className="nav-container">
             <li>
-              <Link className="nav-link" to="/">Latest Posts</Link>
+              <Link className="nav-link" to="Olives-Game-Blog/">Latest Posts</Link>
             </li>
             <li>
-              <Link className="nav-link" to="/posts-index">Posts Index</Link>
+              <Link className="nav-link" to="Olives-Game-Blog/posts-index">Posts Index</Link>
             </li>
           </ul>
         </div>
         <Routes>
-          <Route exact path='/' element={< Posts allImages={allImages}/>}></Route>
-          <Route exact path='/post-details/:postid' element={< PostDetails allImages={allImages}/>}></Route>
-          <Route exact path='/posts-index' element={< PostIndex allImages={allImages}/>}></Route>
+          <Route exact path='/Olives-Game-Blog/' element={< Posts allImages={allImages}/>}></Route>
+          <Route exact path='/Olives-Game-Blog/post-details/:postid' element={< PostDetails allImages={allImages}/>}></Route>
+          <Route exact path='/Olives-Game-Blog/posts-index' element={< PostIndex allImages={allImages}/>}></Route>
         </Routes>
       </Router>
     </div>
