@@ -2,7 +2,7 @@
   "name": "game-review-blog",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://oliviasl.github.io/olives-game-blog",
+  "homepage": "https://oliviasl.github.io/Olives-Game-Blog",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -38,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
